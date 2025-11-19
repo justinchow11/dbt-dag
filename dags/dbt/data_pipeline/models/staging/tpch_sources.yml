@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: tpch
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+    tables:
+      - name: orders
+        columns:
+          - name: o_orderkey
+            tests:
+              - unique
+              - not_null
+      - name: lineitem
+        columns:
+          - name: l_orderkey
+            tests:
+              - relationships:
+                  to: source('tpch', 'orders')
+                  field: o_orderkey
+  - name: staging
+    database: dbt_db
+    schema: dbt_schema
+    tables:
+      - name: stg_tpch_line_items_tbl
+      - name: stg_tpch_orders_tbl
