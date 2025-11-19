@@ -1,5 +1,9 @@
 # Airflow + dbt + Snowflake Data Pipeline
 
+## Demo
+
+https://youtu.be/ZZwfrHVIyf4
+
 ## Project Overview
 
 This project demonstrates a production-ready data engineering pipeline that orchestrates dbt transformations in Snowflake using Apache Airflow. Data orchestration was performed using Astronomer Cosmos to integrate dbt models into Airflow DAGs.
