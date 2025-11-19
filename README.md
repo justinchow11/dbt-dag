@@ -105,15 +105,6 @@ Includes pytest-based tests to validate:
 I built this project to gain hands-on experience with the modern data stack that I keep seeing in job postings. While I followed a tutorial to learn the basics of integrating Airflow with dbt, I wanted to understand how these tools work together in a real pipeline rather than just using them in isolation.
 
 The main goals were:
-- Learn how to orchestrate dbt transformations with Airflow
-- Get experience with containerized deployments
-- See how automated testing works in data pipelines
-
-## Why I Built This Project
-
-I built this project to gain hands-on experience with the modern data stack that I keep seeing in job postings. While I followed a tutorial to learn the basics of integrating Airflow with dbt, I wanted to understand how these tools work together in a real pipeline rather than just using them in isolation.
-
-The main goals were:
 - Learn how Airflow orchestrates data workflows
 - Understand proper data modeling patterns (staging → marts)
 - Get experience with containerized deployments
