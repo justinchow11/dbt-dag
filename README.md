@@ -11,7 +11,6 @@ This project demonstrates a production-ready data engineering pipeline that orch
 - **dbt (data build tool)** - SQL-based transformation framework
 - **Snowflake** - Cloud data warehouse
 - **Astronomer Cosmos** - Library for running dbt projects as Airflow DAGs
-- **Astronomer Runtime** - Containerized Airflow deployment
 
 ## Project Structure
 ```
