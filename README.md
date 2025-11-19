@@ -100,4 +100,45 @@ Includes pytest-based tests to validate:
 
 ---
 
-This project demonstrates proficiency in modern data engineering workflows, infrastructure-as-code practices, and SQL-based analytics engineering.
+## Why I Built This Project
+
+I built this project to gain hands-on experience with the modern data stack that I keep seeing in job postings. While I followed a tutorial to learn the basics of integrating Airflow with dbt, I wanted to understand how these tools work together in a real pipeline rather than just using them in isolation.
+
+The main goals were:
+- Learn how to orchestrate dbt transformations with Airflow
+- Get experience with containerized deployments
+- See how automated testing works in data pipelines
+
+## Why I Built This Project
+
+I built this project to gain hands-on experience with the modern data stack that I keep seeing in job postings. While I followed a tutorial to learn the basics of integrating Airflow with dbt, I wanted to understand how these tools work together in a real pipeline rather than just using them in isolation.
+
+The main goals were:
+- Learn how Airflow orchestrates data workflows
+- Understand proper data modeling patterns (staging → marts)
+- Get experience with containerized deployments
+- See how automated testing works in data pipelines
+
+## What I Learned
+
+**dbt:**
+- Structuring transformations in layers (staging, intermediate, marts)
+- Using `ref()` to manage dependencies between models
+- Writing reusable SQL with macros
+- The importance of data quality tests that run automatically with each model
+
+**Data Modeling:**
+- When to use views vs. tables (staging = views for flexibility, marts = tables for performance)
+- How transformations build on each other through the intermediate layer
+- Why testing at each layer matters for data quality
+
+**Airflow:**
+- How workflow orchestration tools schedule and manage data pipelines
+- Understanding DAGs (Directed Acyclic Graphs) and task dependencies
+- Managing connections to external data sources like Snowflake
+
+**Containerization:**
+- Building custom Docker images for data tools
+- Managing dependencies in isolated environments
+
+**Key Takeaway:** Working through this project helped me understand how the modern data stack fits together - each tool has a specific role, and they integrate to create maintainable, testable data pipelines.
